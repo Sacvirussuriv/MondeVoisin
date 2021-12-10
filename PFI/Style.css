@@ -1,0 +1,212 @@
+<!---Philippe Poirier Labp 6 TestSite, Les Mondes De Demain-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Page d'accueil</title>
+    <meta charset="utf-8">
+
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 2fr 8fr;
+            column-gap: 30px;
+            background-color: black;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position-y: 10vh;
+            color: white;
+        }
+
+
+        .Titre {
+            display: flex;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+            text-shadow: black;
+
+        }
+
+        .Nav :hover {
+            background-color: tomato;
+            color: turquoise;
+        }
+
+      @media screen and (max-width: 600px) {
+      
+      .Liens {
+        display: none;
+      }
+.boutonmenuprincipal {
+    background-color: #72727296;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+    font-size: 30px;
+    }
+    .boutonmenuprincipal:hover {
+    background-color: #72727296;
+    }
+    .deroulant-child:active {
+	background-color:black;
+}
+    .deroulant {
+    position: absolute;
+    display: inline-block;
+    }
+    .deroulant-child {
+    display: none;
+    background-color: #a5a5a5a6;
+    min-width: 50px;
+    }
+    
+    .deroulant-child a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    }
+    .deroulant:hover .deroulant-child {
+    display: block;
+    }
+      
+    }
+
+    @media screen and (min-width: 600px) {
+      .NavBar {
+        color: ghostwhite;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgba(68, 68, 68, 0.603);
+            padding: 1vh;
+            width: 100vw;
+            border-style: solid;
+            border-color: rgb(255, 255, 255);
+      }
+       .Text {
+            position: relative;
+            top: 3vh;
+            left: 1vw;
+            color: white;
+        }
+        .deroulant {
+	display:none;
+}
+    }
+
+        .NavBar:hover {
+            background-color: rgba(68, 68, 68, 0.76);
+            transition: duration 0.5s;
+        }
+
+        :link {
+            color: white;
+        }
+        :hover {
+            color:white;
+        }
+        :active {
+            color: white;
+        }
+        :visited {
+            color: white;
+        }
+
+        .Liens:hover {
+
+            
+            font-family: serif;
+            font-size: x-large;
+            font-weight: bold;
+
+        }
+        
+        .Pastille1{
+            background-color: rgba(71, 70, 70, 0.500);
+            width:98vw;
+            height: 25vh;
+            position: absolute;
+            top: 55vh;
+            border-radius: 20px;
+            border-style: solid;
+            border-radius: 2vw;
+           color:white;
+  
+        }
+       
+        .Texte {
+	
+	color: white;
+}
+
+        .image {
+            width: 30px;
+            height: 30px;
+        }
+         .Pastille2{
+            background-color: black;
+            background-image: url("https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"); 
+            background-repeat: no-repeat;
+            width:50vw;
+            height: 50vh;
+            position: absolute;
+            top: 30vh;
+            right: 30vw;
+            border-radius: 20px;
+            border-style: solid;
+            color:white;
+  
+        }
+
+        .Titre {
+    text-shadow: 1px 1px 2px , 0 blue,0 1em black, 0 0 0.2em white;
+    
+}
+.TxtPT {
+    position: relative;
+    left: 5px;
+}
+.LuneBG {
+            
+            background-image: url(refs/moon.png);
+            background-repeat: no-repeat;
+            background-color: black;
+            
+        }
+.ListeOptionsGauche>li {
+
+        font-weight: bold;
+        height: 170px;
+    }
+    .ButtonA:active {
+        color: grey;
+    }
+.TableauCar  {
+	display: flex;
+	justify-content: center;
+	
+}
+
+.LiensExt {
+	position: absolute;
+	top: 95vh;
+}	
+.Mars {
+        background-image: url(refs/Mars.png);
+    }
+
+
+        #background-video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+
+        }
